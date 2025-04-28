@@ -1,18 +1,10 @@
-## Getting Started
+## Descrição do desafio
+1. Crie um projeto Java no VSCode que deve conter uma classe chamada PrimeiraClasse, com o método main, que ao executar deverá imprimir no console o texto “Concluí a aula 01 e agora estou mergulhando em Java!”.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+2. Crie um projeto Java no IntelliJ que deve conter uma classe chamada Perfil, com o método main, que ao executar deverá imprimir um cumprimento personalizado no console. Por exemplo, "Olá, usuário!". Modifique o programa para imprimir uma segunda mensagem de cumprimento personalizada. Por exemplo, "Tudo bem?".
 
-## Folder Structure
+3. Crie uma classe chamada Estudos para imprimir anotações de estudos no console.
 
-The workspace contains two folders by default, where:
+4. Crie uma classe Soma em Java para imprimir no console o resultado da operação 10 + 5. Certifique-se de que o resultado seja exibido sem o uso de aspas, apresentando o valor "15" ao invés da expressão "10+5".
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+5. Crie uma classe Subtracao para imprimir o resultado de 10 - 5 no console.
