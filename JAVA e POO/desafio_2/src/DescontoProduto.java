@@ -1,4 +1,4 @@
-public class DescontoEmProduto {
+public class DescontoProduto {
     public static void main(String[] args) throws Exception {
 
         double precoOriginal = 87.00;
