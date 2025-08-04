@@ -1,0 +1,13 @@
+public class CarroMain {
+    public static void main(String[] args) throws Exception {
+        Carro meuCarro = new Carro();
+        meuCarro.modelo = "T-Cross Extreme";
+        meuCarro.ano = 2024;
+        meuCarro.cor = "Preto";
+
+        meuCarro.exibeFichaTecnica();
+
+        int anoAtual = 2025; // Coloque o ano atual manualmente
+        System.out.println("Idade do carro: " + meuCarro.calcularIdade(anoAtual) + " anos");
+    }
+}
