@@ -1,6 +1,8 @@
 package br.com.andry.ScreenMatch.modelos;
 
-public class Filme extends Titulo {
+import br.com.andry.ScreenMatch.calculos.Classificavel;
+
+public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
     public String getDiretor() {
@@ -10,4 +12,7 @@ public class Filme extends Titulo {
     public void setDiretor(String diretor) {
         this.diretor = diretor;
     }
+    public int getClassificacao() {
+        return (int) obterMedia() / 2;
+}
 }

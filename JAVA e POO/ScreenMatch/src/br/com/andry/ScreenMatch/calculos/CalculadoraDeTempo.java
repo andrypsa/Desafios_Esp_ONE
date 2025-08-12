@@ -1,5 +1,4 @@
 package br.com.andry.ScreenMatch.calculos;
-
 import br.com.andry.ScreenMatch.modelos.Titulo;
 
 public class CalculadoraDeTempo {

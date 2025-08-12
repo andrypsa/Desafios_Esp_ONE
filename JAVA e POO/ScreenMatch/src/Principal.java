@@ -1,6 +1,6 @@
-import javax.lang.model.util.SimpleAnnotationValueVisitor14;
-
 import br.com.andry.ScreenMatch.calculos.CalculadoraDeTempo;
+import br.com.andry.ScreenMatch.calculos.FiltroRecomendacao;
+import br.com.andry.ScreenMatch.modelos.Episodio;
 import br.com.andry.ScreenMatch.modelos.Filme;
 import br.com.andry.ScreenMatch.modelos.Serie;
 
@@ -49,5 +49,15 @@ public class Principal {
         calculadora.inclui(novoFilmeFavorito);
         calculadora.inclui(smallville);
         System.out.println("O tempo total para maratonar tudo é de: " + calculadora.getTempoTotal());
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtrar(meuFilmeFavorito);
+
+        Episodio ep = new Episodio();
+        ep.setNumero(1);
+        ep.setSerie(smallville);
+        ep.setTotalVisualizacoes(300);
+        filtro.filtrar(ep);
     }
+
 }
