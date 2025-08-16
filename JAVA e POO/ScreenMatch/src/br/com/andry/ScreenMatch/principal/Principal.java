@@ -1,3 +1,4 @@
+package br.com.andry.ScreenMatch.principal;
 import br.com.andry.ScreenMatch.calculos.CalculadoraDeTempo;
 import br.com.andry.ScreenMatch.calculos.FiltroRecomendacao;
 import br.com.andry.ScreenMatch.modelos.Episodio;
