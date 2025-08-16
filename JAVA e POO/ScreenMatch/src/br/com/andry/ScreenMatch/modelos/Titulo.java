@@ -1,6 +1,6 @@
 package br.com.andry.ScreenMatch.modelos;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo> {
     private String nome;
     private int anoDeLancamento;
     private boolean incluidoNoPlano;
@@ -72,7 +72,6 @@ public class Titulo {
         System.out.println("Ano de Lançamento: " + anoDeLancamento);
         System.out.println("Duração em minutos: " + duracaoEmMinutos);
         System.out.println("Incluído no plano: " + incluidoNoPlano);
-
     }
 
     public void avalia(double nota) {
@@ -82,5 +81,10 @@ public class Titulo {
 
     public double obterMedia() {
         return somaDasAvaliacoes / totalDeAvaliacoes;
+    }
+
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
     }
 }
