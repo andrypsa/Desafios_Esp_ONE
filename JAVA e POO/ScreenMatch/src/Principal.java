@@ -4,11 +4,11 @@ import br.com.andry.ScreenMatch.modelos.Episodio;
 import br.com.andry.ScreenMatch.modelos.Filme;
 import br.com.andry.ScreenMatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
-        Filme meuFilmeFavorito = new Filme();
-        meuFilmeFavorito.setNome("A fuga das galinhas");
-        meuFilmeFavorito.setAnoDeLancamento(2000);
+        Filme meuFilmeFavorito = new Filme("A fuga das galinhas", 2000);
         meuFilmeFavorito.setDuracaoEmMinutos(84);
         meuFilmeFavorito.setIncluidoNoPlano(true);
         meuFilmeFavorito.setNotaImdb(7.1);
@@ -26,18 +26,14 @@ public class Principal {
         // meuFilmeFavorito.totalDeAvaliacoes = 1;
         System.out.println(meuFilmeFavorito.obterMedia());
 
-        Serie smallville = new Serie();
-        smallville.setNome("Smallville");
-        smallville.setAnoDeLancamento(2001);
+        Serie smallville = new Serie("Smallville", 2001);
         smallville.exibeFichaTecnica();
         smallville.setTemporadas(10);
         smallville.setEpisodiosPorTemporada(22);
         smallville.setMinutosPorEpisodio(42);
         System.out.println("Duração para maratonar Smallville: " + smallville.getDuracaoEmMinutos());
 
-        Filme novoFilmeFavorito = new Filme();
-        novoFilmeFavorito.setNome("Uma sexta-feira muito louca");
-        novoFilmeFavorito.setAnoDeLancamento(2003);
+        Filme novoFilmeFavorito = new Filme("Uma sexta-feira muito louca", 2003);
         novoFilmeFavorito.setDuracaoEmMinutos(97);
         novoFilmeFavorito.setIncluidoNoPlano(true);
         novoFilmeFavorito.setNotaImdb(6.4);
@@ -58,6 +54,18 @@ public class Principal {
         ep.setSerie(smallville);
         ep.setTotalVisualizacoes(300);
         filtro.filtrar(ep);
-    }
 
+        var filmeDaAndry = new Filme("The Avangers", 2012);
+        filmeDaAndry.setDuracaoEmMinutos(143);
+        filmeDaAndry.avalia(8);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filmeDaAndry);
+        listaDeFilmes.add(meuFilmeFavorito);
+        listaDeFilmes.add(novoFilmeFavorito);
+
+        System.out.println("Tamanho da lista: " + listaDeFilmes.size());
+        System.out.println("Primeiro Filme: " + listaDeFilmes.get(0));
+        System.out.println(listaDeFilmes);
+    }
 }
