@@ -26,7 +26,7 @@ O projeto foi construído com **orientação a objetos**, uso de **bibliotecas e
 
 ## ⚙️ Como rodar o projeto
 
-### 1. Clonar o repositório
+1. Clonar o repositório
 ```bash
 git clone https://github.com/seuusuario/conversor-de-moedas.git
 cd conversor-de-moedas
