@@ -79,6 +79,6 @@ Este projeto foi desenvolvido com base na Formação Java e Orientação a Objet
 Projeto desenvolvido por Andrielly Patrícia como prática de Java + APIs.
 
 ---
-## 🙏 Agradecimentos
+🙏 Agradecimentos
 
 Quero agradecer à **Alura** e à **Oracle**, pela oportunidade de participar da formação em Java e Orientação a Objetos através do programa **ONE - Oracle Next Education**.  
