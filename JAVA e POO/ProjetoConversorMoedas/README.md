@@ -26,20 +26,20 @@ O projeto foi construído com **orientação a objetos**, uso de **bibliotecas e
 
 ## ⚙️ Como rodar o projeto
 
-### 1. Clonar o repositório
+1 - Clonar o repositório
 ```bash
 git clone https://github.com/seuusuario/conversor-de-moedas.git
 cd conversor-de-moedas
 
-2. Baixar dependências
+2 - Baixar dependências
 
 Certifique-se de ter o Gson dentro da pasta lib/.
 Se não tiver, faça o download: Gson
 
-3. Compilar o projeto
+3 - Compilar o projeto
 javac -cp lib/gson.jar -d bin src/conversor/*.java
 
-4. Executar o projeto
+4 - Executar o projeto
 java -cp "bin;lib/gson.jar" conversor.Main
 
 
