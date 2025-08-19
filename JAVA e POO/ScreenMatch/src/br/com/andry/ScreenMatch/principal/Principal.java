@@ -4,7 +4,6 @@ import br.com.andry.ScreenMatch.calculos.FiltroRecomendacao;
 import br.com.andry.ScreenMatch.modelos.Episodio;
 import br.com.andry.ScreenMatch.modelos.Filme;
 import br.com.andry.ScreenMatch.modelos.Serie;
-
 import java.util.ArrayList;
 
 public class Principal {
@@ -25,7 +24,7 @@ public class Principal {
         System.out.println("A média das avaliações do filme foi de: " + meuFilmeFavorito.obterMedia());
         // meuFilmeFavorito.somaDasAvaliacoes = 10;
         // meuFilmeFavorito.totalDeAvaliacoes = 1;
-        System.out.println(meuFilmeFavorito.obterMedia());
+        //System.out.println(meuFilmeFavorito.obterMedia());
 
         Serie smallville = new Serie("Smallville", 2001);
         smallville.exibeFichaTecnica();
@@ -65,8 +64,9 @@ public class Principal {
         listaDeFilmes.add(meuFilmeFavorito);
         listaDeFilmes.add(novoFilmeFavorito);
 
-        System.out.println("Tamanho da lista: " + listaDeFilmes.size());
-        System.out.println("Primeiro Filme: " + listaDeFilmes.get(0));
+        System.out.println("Tamanho da lista " + listaDeFilmes.size());
+        System.out.println("Primeiro filme " + listaDeFilmes.get(0).getNome());
         System.out.println(listaDeFilmes);
+        System.out.println(listaDeFilmes.get(0).toString());
     }
 }

@@ -2,7 +2,7 @@ package br.com.andry.ScreenMatch.calculos;
 import br.com.andry.ScreenMatch.modelos.Titulo;
 
 public class CalculadoraDeTempo {
-    private int tempoTotal = 0;
+    private int tempoTotal;;
 
     public int getTempoTotal() {
         return this.tempoTotal;

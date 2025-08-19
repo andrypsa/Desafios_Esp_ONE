@@ -3,7 +3,7 @@ public class CalculoTotalProduto {
 
         double precoProduto = 25.90;
         int quantidade = 6;
-        // calculo do valor total do produto
+       
         double valorTotal = precoProduto * quantidade;
 
         System.out.println(String.format("O valor total dos produtos é de R$ %.2f reais.", valorTotal));
